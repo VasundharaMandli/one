@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var questions=[
+            {
+                prompt:"what color are apples?\n\(a)red \n (b)green \n (c)yellow",
+                answer:"a"
+            },
+            {
+                prompt:"what color are berry?\n\(a)red \n (b)green \n (c)yellow",
+                answer:"a"
+            },
+            {
+                prompt:"what color are bananas?\n\(a)red \n (b)green \n (c)yellow",
+                answer:"c"
+            }
+            ]
+            var score=0;
+            alert(questions.length)
+            for(var i=0;i<questions.length;i++){
+                var response=prompt(questions[i].prompt);
+                if(response==questions[i].answer){
+                    score++;
+                    alert("correct");
+                }
+                else{
+                    alert("wrong");
+                }
+            }
+            alert("you got "+score+"/"+questions.length);
+
+       
+    </script>
+</body>
+</html>

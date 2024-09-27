@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>getElementsByClassName</h1>
+
+    <p class="txt">first paragraph</p>
+    <p class="txt">second paragraph</p>
+    <p class="txt">third paragraph</p>
+    <button onclick="demo()">red color</button>
+    <script>
+        const demo=()=>{
+    let data=document.getElementsByClassName("txt")
+    data[0].innerHTML="Hello"
+    data[1].style.color="red"
+        }
+    </script>
+</body>
+</html>

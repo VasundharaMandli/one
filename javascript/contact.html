@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link href="style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+  <style>
+    .contact-row {
+      display: flex;
+    }
+
+    button {
+      padding: 20PX;
+      border-radius: 30PX 0PX 30PX 0PX;
+      background-color: rgb(129, 57, 129);
+    }
+    body{
+      background-color: rgb(13, 202, 202);
+    }
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f8f9fa;
+    }
+    .header{
+        background-color: rgb(134, 52, 134);
+        color: white;
+    }
+    
+    .hero{
+        background-color: #711360;
+        color: #fff;
+        padding: 60px 0;
+    }
+    .hero-title{
+        font-size: 1.0rem;
+        margin-bottom: 20px;
+    }
+    .hero-subtitle{
+        font-size: 4.25rem;
+        margin-bottom: 30px;
+    }
+    .btn-primary{
+        padding: 10px 30px;
+        background-color: rgb(241, 181, 106);
+        border: none;
+        padding: 17px;
+        border-radius: 15px 0px 15px 0px;
+       }
+       .btn:hover{
+        transition: 2s;
+        background-color: purple;
+       }
+    .img{
+        max-width: 100%;
+        height:auto;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+        
+    }
+    .hero{
+        background-image:linear-gradient(rgba(97, 17, 64, 0.815),rgba(97, 17, 64, 0.815)),url(sea1.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+       // background-color: #711360;
+    }
+    
+    .button{
+        position: relative;
+        font-size: 22px;
+        line-height: 22px;
+        font-weight: 500;
+        padding: 24px 50px;
+        text-align: center;
+        color: white;
+        display: inline-block;
+        background-color: white;
+        border-radius: 35px 0px 35px 0px;
+        transition: all 0.3s ease-in-out;
+        overflow: hidden;
+        box-sizing: border-box;
+        border: white;
+    }
+    .button{
+        padding: 14px 30px;
+        color: white;
+    }
+    .nav-link{
+        color: white;
+        padding: 0px;
+    }
+    p{
+        font-size: 1.0rem;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        margin-bottom: 40px;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <header class="header text-white text-center">
+    <nav class="navbar navbar-expand-lg navbar-#711360">
+      <div class="container-fluid">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="navbar-brand" href="index.html"><img src="https://designingmedia.com/yogastic/wp-content/uploads/2023/09/logo-4.png" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="index.html" >Home</a>
+            </li>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">About</a>
+            </li>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <li class="nav-item">
+              <a class="nav-link" href="#Service">Service</a>
+            </li>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <li class="nav-item">
+              <a class="nav-link" href="#Gallery">Gallery</a>
+            </li>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <li class="nav-item">
+              <a class="nav-link" href="#schedule">schedule</a>
+            </li>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <li class="nav-item">
+              <a class="nav-link" href="#Contact">Contact</a>
+            </li>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           
+          </ul>
+         
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!------------------------------------------------contact us---------------------------------------------------->
+
+  <section class="hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h1 class="hero-subtitle">Contact Us</h1>
+          <p class="vasu text-white">Yogic Practices for Health and Wellness:The widely practiced Yoga Sadhanas</p>
+          <button type="button" class="btn btn-primary">Get Started</button>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <br>
+
+  <div class="container-fluid" >
+    
+    <div class="row" style="justify-content: center;" >
+      
+      <div class="col-md-7 text-center" style="justify-content: center;">
+        <h5>Get In Touch</h5>
+        <h2>Send Us a Message</h2>
+        <p>Yoga works on the level of one’s body, mind, emotion and energy. This has given rise to four broad classifications of Yoga.
+          <br> karma yoga, where we utilize the body; bhakti yoga, where we utilize the emotions; gyana yoga.
+        </p>
+
+        <form>
+          <div class="row" style="justify-content: center;">
+            <div class="form-group  col-md-4 ">
+              <input type="text" class="form-control" placeholder="First Name">
+               
+            </div>
+            <div class="form-group  col-md-4 ">
+              <input type="text" class="form-control" placeholder="Last Name">
+            </div><br><br>
+
+          </div>
+          <div class="row " style="justify-content: center;">
+            <div class="form-group  col-md-4">
+              <input type="text" class="form-control" placeholder="phone">
+            </div><br><br>
+            <div class="form-group  col-md-4">
+              <input type="email" class="form-control" placeholder="Email">
+            </div><br><br>
+            <div class="form-group  col-md-8">
+              <textarea class="form-control" placeholder="Message">
+
+
+
+
+          </textarea><br><br>
+
+              <button>READ MORE</button>
+              
+              
+              <br>
+              <br>
+              <br>
+           
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+              
+  <div class="container">
+    <div class="contact-row " style="text-align: center; justify-content: center;">
+      <div class="col-md-4 ">
+     <img decoding="async" width="90" height="90"  src="https://designingmedia.com/yogastic/wp-content/uploads/2023/03/contact-iocn1-1.png" class="elementor-animation-float attachment-full size-full wp-image-4544" alt="">
+     <article class="text">
+      <br>
+     <h1 class="sub-heading ">Location</h1>
+     <p class="para">Yoga works level of one’s body, mind, emotion and energy</p>
+     </article>
+    </div>
+
+    <div class="col-md-4">
+     <img decoding="async" width="90" height="90" src="https://designingmedia.com/yogastic/wp-content/uploads/2023/03/contact-iocn3-1.png" class="elementor-animation-float attachment-full size-full wp-image-4562" alt="">
+     
+     <article class="text">
+      <br>
+     <h1 class="sub-heading ">Email</h1>
+     <p class="para">Yoga works level of one’s body, mind, emotion and energy</p>
+   </article>
+ </div>
+  
+ <div class="col-md-4">
+   <img decoding="async" width="90" height="90" src="https://designingmedia.com/yogastic/wp-content/uploads/2023/03/contact-iocn2-1.png" class="elementor-animation-float attachment-full size-full wp-image-4561" alt="">
+   <article class="text">
+    <br>
+   <h1 class="sub-heading ">Phone</h1>
+   <p class="para">Yoga works level of one’s body, mind, emotion and energy</p>
+   
+ </article>
+</div>
+</div>
+</div>
+
+
+<div class="container-fluid">
+  
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d487232.93938179757!2d77.81139987343748!3d17.435415100000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93e6e15ad8d3%3A0x8e476531243eeb3e!2sMOURI%20Tech!5e0!3m2!1sen!2sin!4v1719403598812!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div>
+<!------------------------footer------------------------------------------->
+
+
+
+<footer class="footer mt-auto py-4 bg-purple text-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+    <img src="https://designingmedia.com/yogastic/wp-content/uploads/2023/09/logo-4.png" alt="logo">
+      <br>
+    </div>
+    
+      <div class="col-md-3">
+        <h5>About us</h5>
+        <p>The practice of Yoga is believed to have started with the very dawn of civilization.</p>
+        <a href="#" class="text-white mr-2 p-3"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="text-white mr-2 p-3"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-white mr-2 p-3"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <div class="col-md-3">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="index.html" class="text-white">Home</a></li>
+          <li><a href="about us.html" class="text-white">About Us</a></li>
+          <li><a href="Service.html" class="text-white">Services</a></li>
+          <li><a href="schedule.html" class="text-white">schedule</a></li>
+          <li><a href="contact.html" class="text-white">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h5>Contact Info</h5>
+        <ul class="list-unstyled">
+        <li><i class="fa fa-phone"></i>+91 6302721879 </li>
+        <li><i class="fa fa-envelope"></i>info@yogastic.com </li>
+        <li><i class="fa fa-map-marker"></i>21 madhapur,hyderabad,india 500045. </li>
+        
+      </ul>
+      <div>
+         </div>
+      
+          </div>
+    
+  </div>
+  </div>
+</div>
+  <hr>
+  <div class="text-center mt-3 font-size='1.0'">copy;yogastic 2024. All Rights reserved</div>
+
+</footer>
+
+  
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>javascript</h1>
+
+  
+        <table border="10px">
+            <tr>
+            <td>date</td>
+            <td>tempature</td>
+            <td>whether condition</td>
+            </tr>
+            <tr>
+                <td id="one"></td>
+                <td id="two"></td>
+                <td id="three"></td>
+            </tr>
+            <script>
+               let marks=prompt("enter the tempature")
+               let obj=new Date()
+                  let a=obj.getDay()
+                  let b=obj.getMonth()+1
+                  let c=obj.getFullYear()
+                  document.getElementById("one").innerHTML=a+" "+b+" "+c
+                  document.getElementById("two").innerHTML=marks
+     
+                 
+                  if(marks<=20){
+                   document.getElementById('three').innerHTML='cool'
+               }
+                  else if(marks>20 && marks<=40 ){
+                   document.getElementById('three').innerHTML='hot'
+               } 
+                 else if (marks>40){
+                    document.getElementById('three').innerHTML='extremely hot'
+               }
+             
+            </script>
+            </table>
+    
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ 
+<body id="txt">
+ 
+   <img src="" id="pic" width="200px" height="200px">
+    <select onchange="Demo()" id="color">
+        <option value="red">red</option>
+        <option value="green">green</option>
+        <option value="pink">pink</option>
+        <option value="yellow">yellow</option>
+    </select>
+    <script>
+        function Demo() {
+ 
+            let data = document.getElementById("color").value
+         
+            if (data == "red") {
+                document.getElementById('pic').src="a1.jpg"
+                document.getElementById('txt').style.backgroundColor = data
+            } else if (data == "green") {
+                document.getElementById('pic').src="a2.jpg"
+                document.getElementById('txt').style.backgroundColor = data
+            } else if (data == "pink") {
+                document.getElementById('pic').src="a3.jpg"
+                document.getElementById('txt').style.backgroundColor = data
+            }else if (data == "yellow") {
+                document.getElementById('pic').src="a4.jpg"
+                document.getElementById('txt').style.backgroundColor = data
+            }
+        }
+    </script>
+</body>
+ 
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>javascript</h1>
+    <form>
+        <input type="text" placeholder="userid"   name="uid" id="uid">
+        <br>
+        <input type="password" placeholder="password"  name="pwd" id="pwd">
+        <br>
+        <input type="password" placeholder="reenter password"  name="rpwd" id="rpwd">
+        <br>
+        <input type="button" value="getdata" onclick="demo()">
+    </form>
+    <script>
+        function demo(){
+       let uid= document.getElementById("uid").value
+       let pwd= document.getElementById("pwd").value
+       let rpwd= document.getElementById("rpwd").value
+       if(pwd==rpwd){
+        alert("thank you"+uid)
+       }
+       else{
+       alert("password should not be matching")
+        }
+    }
+    </script>
+</body>
+</html>

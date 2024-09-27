@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="name"></h1>
+    <select onchange="Demo()" id="city" >
+        <option >hyderabad</option>
+        <option>delhi</option>
+        <option>banglore</option>
+        <option>simla</option>
+        <option>kadapa</option>
+       
+ 
+    </select>
+    <script>
+        function Demo(){
+           
+           let change=document.getElementById("city").value
+          if(change=='hyderabad'){
+            let a=['charminar','birlamandir','golkonda']
+          document.getElementById("name").innerHTML="you selected "+"<span style='color:red;'>"+a+"</span> course";
+           
+         
+        }else if(change=="banglore"){
+            let b=['zoo park','iskantemple']
+            document.getElementById("name").innerHTML="you selected "+"<span style='color:red;'>"+b+"</span> course";
+        }else if(change=="delhi"){
+            let c=['redfort','indiangate']
+            document.getElementById("name").innerHTML="you selected "+"<span style='color:red;'>"+c+"</span> course";
+        }else if(change=="kadapa"){
+            let d=['tirumala','kanipakam','ahobilam']
+            document.getElementById("name").innerHTML="you selected "+"<span style='color:red;'>"+d+"</span> course";
+        }
+    }
+    </script>
+</body>
+</html>
+ 

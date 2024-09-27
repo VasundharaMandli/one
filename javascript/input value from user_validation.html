@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>javascript</h1>
+    <form>
+        <input type="text" name="fname" id="fname">
+        <br>
+        <input type="button" value="getdata" onclick="demo()">
+    </form>
+    <script>
+        function demo(){
+       let val= document.getElementById("fname").value
+       if(val==""){
+        alert("Feild should not be empty")
+       }
+       else{
+       alert("hello"+val)
+        }
+    }
+    </script>
+</body>
+</html>

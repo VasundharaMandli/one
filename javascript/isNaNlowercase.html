@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>javascript</h1>
+         <input type="type"  placeholder="enter name" id="uppercase" >
+        <input type="button"  value="submit" id="uppercase" onclick="Demo()">
+   
+    <script>
+       
+        function Demo(){
+            let str= document.getElementById('uppercase').value
+            if(str==""){
+            alert("Field should not be empty")
+            }
+            else if(str==str.toUpperCase()){
+                let str1 =document.getElementById('uppercase').value=str.toLowerCase()
+ 
+            }
+            else if(str==str.toLowerCase()){
+                let str1 =document.getElementById('uppercase').value=str.toUpperCase()
+ 
+            }
+            else{
+            alert("Enter only words")
+            }
+        }
+       
+    </script>
+</body>
+</html>

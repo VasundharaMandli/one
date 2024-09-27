@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ 
+<body>
+ 
+   <img src="poster2.jpg" id="pic">
+    <select onchange="Demo()" id="color">
+        <option>200px</option>
+        <option>300px</option>
+        <option>400px</option>
+        <option>500px</option>
+    </select>
+    <script>
+        function Demo() {
+ 
+            let x = document.getElementById('color').value
+            document.getElementById('pic').style.width=x
+         
+           
+        }
+    </script>
+</body>
+ 
+</html>

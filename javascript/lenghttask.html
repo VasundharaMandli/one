@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="txt"></h1>
+    <script>
+        let userid=prompt("enter user id")
+        alert(userid.length)
+       
+        if(userid.length>=5 && userid.length<=8){
+ 
+        document.getElementById("txt").innerHTML= userid
+        }else{
+        document.getElementById("txt").innerHTML="userid invalid"
+    }
+       
+    </script>                                      
+</body>
+</html>

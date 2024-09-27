@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demo"></h1>
+    <script>
+       let date=new Date();
+       let day=date.getDay();
+       //alert(day)
+       if(day==0){
+        document.getElementById("demo").innerHTML='sunday'
+       }else  if(day==1){
+        document.getElementById("demo").innerHTML='monday'
+       }else  if(day==2){
+        document.getElementById("demo").innerHTML='tuesday'
+       }else  if(day==3){
+        document.getElementById("demo").innerHTML='wendsday'
+       }else  if(day==4){
+        document.getElementById("demo").innerHTML='thursday'
+       }else  if(day==5){
+        document.getElementById("demo").innerHTML='friday'
+       }
+       else  if(day==6){
+        document.getElementById("demo").innerHTML='saturday'
+       }
+       //else{
+       // document.getElementById("demo").innerHTML="today is"+day
+      // }
+    </script>
+</body>
+</html>

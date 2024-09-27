@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>window location</h1>
+    <select id="linkSelector" onchange="demo()">
+        <option value="">Select a link</option>
+        <option value="whileloop2.html">whileloop2page</option>
+        <option value="https://www.google.com">google</option>
+    </select>
+    
+    <script>
+    function demo() {
+        var selector = document.getElementById('linkSelector').value
+        window.location.href = selector
+       
+    }
+    </script>
+</body>
+</html>

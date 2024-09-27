@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Card</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Montserrat", sans-serif;
+    background: #000;
+}
+a{
+    text-decoration: none;
+}
+.card-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card div:nth-child(1){
+    display: flex;
+    align-items: center;
+}
+.card-container .card{
+    width: 500px;
+    height: 250px;
+    background: #ffffff;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+.card div:nth-child(1){
+    width: 400px;
+    height: 250px;
+}
+ 
+.card div:nth-child(2){
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.card div:nth-child(1) img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 18px;
+    scale: 0.9;
+}
+.card div:nth-child(2) h1:nth-child(1){
+    font-size: 35px;
+    font-weight: 700;
+}
+.card div:nth-child(2) p:nth-child(2){
+    font-size: 18px;
+    font-weight: 600;
+}
+.card div:nth-child(2) p:nth-child(3){
+    font-size: 12px;
+    font-weight: 600;   
+}
+.card div:nth-child(2) p:nth-child(4){
+    font-size: 15px;
+    font-weight: 600;
+}
+.card div:nth-child(2) div:nth-child(5){
+    display: flex;
+    justify-content: space-around;
+}
+ 
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card">
+            <div>
+                <img src="vasu1.jpg" alt="">
+            </div>
+            <div>
+                <h1>vasundhara</h1>
+                <P>MERN Stack Dev</P>
+                <p>Junior MERN Stack Developer passionate about building innovative web applications</p>
+                <p>vasu.11@gmail.com</p>
+                <div>
+                    <a href="">
+                        <i class="fa-brands fa-instagram fa-2xl" style="color: #000000;"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-github fa-2xl" style="color: #000000;"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-twitter fa-2xl" style="color: #000000;"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-facebook fa-2xl" style="color: #000000;"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+ 

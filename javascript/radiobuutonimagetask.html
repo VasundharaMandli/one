@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>javascript</h1>
+    <form id="demo">
+        <input type="radio" name="gender" value="Male" onclick="Demo()">male
+        <input type="radio" name="gender" value="Female" onclick="Demo()">female
+    </form>
+    <img src="" id="image">
+    <script>
+        function Demo(){
+            let val=document.getElementById('demo').gender.value
+            if(val=="Male"){
+                document.getElementById('image').src="male.jpeg"
+ 
+            }
+            else{
+                document.getElementById('image').src="female.jpeg"
+            }
+           
+ 
+        }
+    </script>
+</body>
+</html>

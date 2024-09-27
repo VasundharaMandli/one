@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1px" width="500px" align="center" height="150">
+        <tr>
+            <td>salary</td>
+            <td>taxamount</td>
+            <td>takehomesalary</td>
+        </tr>
+        <tr>
+            <td id="salary"></td>
+            <td id="taxamount"></td>
+            <td id="takehomesalary"></td>
+        </tr>
+        <script>
+            var salary=prompt("enter amount")
+            document.getElementById('salary').innerHTML=salary
+            document.getElementById('taxamount').innerHTML=salary*5/100
+        if(salary<=30000){
+            document.getElementById("taxamount").innerHTML="no tax"
+            document.getElementById("takehomesalary").innerHTML=salary
+            }
+        else if(salary>30000 && salary<=40000){
+            document.getElementById("taxamount").innerHTML=salary*5/100
+            document.getElementById("takehomesalary").innerHTML=takehomesalary
+            document.getElementById("takehomesalary").innerHTML=salary-salary * 5/100
+        }
+        else if (salary>40000 && salary<=50000){
+            document.getElementById("taxamount").innerHTML=salary*8/100
+            document.getElementById("takehomesalary").innerHTML=takehomesalary
+            document.getElementById("takehomesalary").innerHTML=salary-salary * 8/100
+ 
+        }
+        else if (salary>50000){
+            document.getElementById("taxamount").innerHTML=salary*10/100
+            document.getElementById("takehomesalary").innerHTML=takehomesalary
+            document.getElementById("takehomesalary").innerHTML=salary-salary * 10/100
+        }
+        </script>
+    </table>
+</body>
+</html>

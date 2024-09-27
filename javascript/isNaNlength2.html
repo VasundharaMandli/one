@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>javascript</h1>
+    <form>
+        <input type="text" name="phonenumber" id="phonenumber" placeholder="phonenumber">
+        <br>
+        <input type="button" value="validate" onclick="demo()">
+    </form>
+    <script>
+        function demo(){
+       let value= document.getElementById("phonenumber").value
+       let len=value.length
+       if(isNaN(value)){
+        alert("phone number  should be a number  ")
+       }
+      
+       else if(len!=10){
+        alert("phone number should be 10 digits")
+    }
+   else{
+    alert("thank you")
+   }
+
+    }
+    </script>
+</body>
+</html>

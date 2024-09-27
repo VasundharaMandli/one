@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Selector</title>
+</head>
+<body>
+    <select id="fruitSelect">
+        <option value="">Select a fruit</option>
+        <option value="apple">Apple</option>
+        <option value="banana">Banana</option>
+        <option value="oranges">Oranges</option>
+        <option value="pomegranate">Pomegranate</option>
+    </select>
+    <h2>You selected: <span id="selectedFruitName"></span></h2>
+    
+    <img id="fruitImage" src="" alt="Selected fruit" style="display: none;">
+
+    <script>
+        const fruitSelect = document.getElementById('fruitSelect');
+        const fruitImage = document.getElementById('fruitImage');
+        const selectedFruitName = document.getElementById('selectedFruitName');
+
+        fruitSelect.addEventListener('change', function() {
+            const selectedFruit = this.value;
+            if (selectedFruit) {
+                fruitImage.src = `${selectedFruit}.jpg`;
+                fruitImage.style.display = 'block';
+                fruitImage.alt = `Image of ${selectedFruit}`;
+                selectedFruitName.textContent = this.options[this.selectedIndex].text;
+            } else {
+                fruitImage.style.display = 'none';
+                selectedFruitName.textContent = '';
+            }
+        });
+    </script>
+</body>
+</html>

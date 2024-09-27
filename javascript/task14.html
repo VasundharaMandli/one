@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Selector</title>
+    <style>
+        .image-container {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .thumbnail {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            cursor: pointer;
+        }
+        #displayedImage {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="apple.jpg" alt="Image 1" class="thumbnail" data-color="#FFD700">
+        <img src="banana.jpg" alt="Image 2" class="thumbnail" data-color="#98FB98">
+        <img src="pomegranate.jpg" alt="Image 3" class="thumbnail" data-color="#87CEFA">
+        <img src="oranges.jpg" alt="Image 4" class="thumbnail" data-color="#FFA07A">
+    </div>
+    <div id="displayContainer">
+        <img id="displayedImage" src="" alt="">
+    </div>
+
+    <script>
+        const thumbnails = document.querySelectorAll('.thumbnail');
+        const displayedImage = document.getElementById('displayedImage');
+
+        thumbnails.forEach(thumbnail => {
+            thumbnail.addEventListener('click', function() {
+                displayedImage.src = this.src;
+                displayedImage.alt = this.alt;
+                document.body.style.backgroundColor = this.dataset.color;
+            });
+        });
+    </script>
+</body>
+</html>

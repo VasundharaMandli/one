@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demo">javascript localStorage demo</h1>
+    <textarea id="inputText"></textarea><br>
+    <input type="button" value="save" onclick="saveData()">
+    <input type="button" value="load" onclick="loadData()">
+    <input type="button" value="Clear" onclick="clearData()">
+    <script>
+        function saveData() {
+            const text = document.getElementById("inputText").value;
+            localStorage.setItem("data", text);
+        }
+ 
+        function loadData() {
+            const data = localStorage.getItem("data");
+            document.getElementById("demo").innerHTML = data ? data : "No data found.";
+        }
+ 
+        function clearData() {
+            localStorage.removeItem("data");
+            document.getElementById("demo").innerHTML = "Data cleared.";
+        }
+    </script>
+</body>
+</html>
+ 

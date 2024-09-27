@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color:red;
+            text-align: center;
+            font-size: 5em;
+            box-shadow: 4px 6px 9px black;
+            background-color: beige;
+        }
+        h1:hover{
+           background-color: chartreuse;
+           color: black;
+        }
+      
+    </style>
+</head>
+<body>
+    <h1>mouritech</h1>
+    <h1 id="txt"></h1>
+   
+   
+    <script>
+        let x=prompt('enter paragraph')
+      
+        if (x.length>100){
+           alert("too lenghty")
+        } else{
+            document.getElementById('txt').innerHTML=x
+        }
+    </script>
+</body>
+</html>

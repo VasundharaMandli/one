@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICON</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body {
+    background: #000;
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+.icon img{
+    width: 300px;
+    height: 200px;
+    margin-left: 30px;
+    
+}
+.icon img {
+    filter: grayscale(100%);
+    transition: all 0.5s ease;
+    transform: scale(0.8);
+}
+ 
+.icon img:hover {
+    filter: grayscale(0%);
+    transform: scale(1);
+}
+
+    </style>
+</head>
+<body>
+    <div class="icon">
+        <img src="vasu.jpg" alt="">
+        <img src="vasu.jpg" alt="">
+        <img src="vasu.jpg" alt="">
+    </div>
+</body>
+</html>
+
